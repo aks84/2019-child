@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*
+Theme Name: 2019-child
+Theme URI: https://github.com/WordPress/twentynineteen
+Author: TubeMint
+Author URI: https://www.tubemint.com/
+Template:     twentynineteen
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+*/
+
+main {
+    width: 65%;
+    float: left;
+}
+
+.postSidebar {
+    width: 32%;
+    float: left;
+    margin-top:17px;
+   }
+
+
+.site-header {
+    margin: 0;
+    padding: 0rem 0;
+}
+.site-branding {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.siteLogo {
+    width: 21%;
+	float:left;
+	   }
+.social-menu {
+    float: right;
+	margin-top: 30px;
+    li{
+        background-color: ghostwhite;
+    }
+}
+
+#site-navigation {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: ghostwhite;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    float:left;
+    position: relative;
+}
+
+.fixed-nav #site-navigation{
+    position: fixed; 
+    margin-top: 0px; 
+    z-index: 1; 
+    -webkit-box-shadow: 0px 9px 16px -8px rgba(141,150,138,1);
+-moz-box-shadow: 0px 9px 16px -8px rgba(141,150,138,1);
+box-shadow: 0px 9px 16px -8px rgba(141,150,138,1);
+}
+
+
+
+.fixed-nav .main-navigation .main-menu > li > a {
+    font-weight: 550;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.post-widget {
+    margin-top: 50px;
+}
+
+#masthead {
+    background: silver;
+}
+
+
+#menu-top-menu {
+    margin: 0px 11%;
+
+}
+
+.main-navigation .main-menu > li > a {
+
+    font-weight: 450;
+    color: black;
+    margin-right: 0.5rem;
+
+}
+
+.entry-title, .widget-title{
+    font-weight: 400;
+     line-height: 100%;
+}
+
+.widget a {
+    color: #0073aa;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.widget a::before{
+    content:'-> ';
+    color: gray;
+}
+
+
+
+/* 
+   =====================
+        for ipad 
+   =====================
+*/
+
+@media screen and (max-width: 1170px) {
+.siteLogo {
+    width: 25%;
+    float: left;
+}
+
+.social-menu {
+    float: right;
+    margin-top: 15px;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+.postSidebar {
+    width: 100%;
+    margin: auto;
+    display:flex;
+   }
+
+.post-widget {
+
+    width: 100%;
+    margin: 0 0 0 6rem;
+
+
+}
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .post-widget {
+    width: 100%;
+    margin: 0 0 0 1rem;
+}
+
+}
+
+
+
+@media screen and (max-width: 550px) {
+
+    .siteLogo {
+    width: 60%;
+    margin-left: 18%;}
+
+
+    .social-menu {
+        width: 100%;
+    }
+
+    #menu-social-links-menu {
+    margin-left: 20%;
+    padding-bottom: 20px;
+    }
+
+
+}
